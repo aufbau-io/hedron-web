@@ -1,12 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+	import logo from './aufbau-logo.png';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<a href="https://aufbau.io">
 			<img src={logo} alt="SvelteKit" />
+			an aufbau construct
 		</a>
 	</div>
 
@@ -15,12 +16,17 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
+			<li class:active={$page.url.pathname === '/'}>
+				<a sveltekit:prefetch href="/">about</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
+			<li class:active={$page.url.pathname === '/workshops'}>
+				<a sveltekit:prefetch href="/workshops">Workshops</a>
+			</li>
+			<li class:active={$page.url.pathname === '/makers'}>
+				<a sveltekit:prefetch href="/makers">Makers</a>
+			</li>
+			<li class:active={$page.url.pathname === '/contact'}>
+				<a sveltekit:prefetch href="/contact">Contact</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -40,8 +46,9 @@
 	}
 
 	.corner {
-		width: 3em;
+		width: 7em;
 		height: 3em;
+		opacity: 0;
 	}
 
 	.corner a {
@@ -50,11 +57,14 @@
 		justify-content: center;
 		width: 100%;
 		height: 100%;
+		font-size: .8rem;
+		line-height: .8rem;
+		color: var(--aufbau-color)
 	}
 
 	.corner img {
-		width: 2em;
-		height: 2em;
+		width: 3em;
+		height: 2.4em;
 		object-fit: contain;
 	}
 
@@ -71,7 +81,7 @@
 	}
 
 	path {
-		fill: var(--background);
+		fill: var(--heading-color);
 	}
 
 	ul {
@@ -83,7 +93,7 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
+		background: var(--heading-color);
 		background-size: contain;
 	}
 
@@ -101,7 +111,7 @@
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
+		border-top: var(--size) solid var(--primary-color);
 	}
 
 	nav a {
@@ -109,7 +119,7 @@
 		height: 100%;
 		align-items: center;
 		padding: 0 1em;
-		color: var(--heading-color);
+		color: var(--primary-color);
 		font-weight: 700;
 		font-size: 0.8rem;
 		text-transform: uppercase;

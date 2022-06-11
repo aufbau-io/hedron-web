@@ -22,7 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0",
+		"@fontsource/roboto-mono": "^4.5.0",
 		"cookie": "^0.4.1"
 	}
 }
