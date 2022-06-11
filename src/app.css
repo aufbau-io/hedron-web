@@ -5,13 +5,13 @@
 	--pure-white: #ffffff;
 	--primary-color: #171717;
 	--secondary-color: #0a0a0a;
-	--accent-color: #f0f0f0;
+	--accent-color: #00eed8;
 	--heading-color: #00bbaa;
 	--aufbau-color: #feb74cee;
 	--text-color: #f0f0f0;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
-	--column-margin-top: 4rem;
+	--column-margin-top: 1rem;
 	--border: solid 2px white;
 }
 
@@ -28,14 +28,14 @@ body {
 }
 
 h1,
-h2,
-p {
+h2 {
 	font-weight: 400;
 	color: var(--heading-color);
 }
 
 p {
 	line-height: 1.5;
+	color: var(--heading-color);
 }
 
 a {

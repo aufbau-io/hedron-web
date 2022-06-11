@@ -4,12 +4,6 @@
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://aufbau.io">
-			<img src={logo} alt="SvelteKit" />
-			an aufbau construct
-		</a>
-	</div>
 
 	<nav>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -42,36 +36,12 @@
 <style>
 	header {
 		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 7em;
-		height: 3em;
-		opacity: 0;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
 		justify-content: center;
-		width: 100%;
-		height: 100%;
-		font-size: .8rem;
-		line-height: .8rem;
-		color: var(--aufbau-color)
 	}
-
-	.corner img {
-		width: 3em;
-		height: 2.4em;
-		object-fit: contain;
-	}
-
+	
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
 	}
 
 	svg {
