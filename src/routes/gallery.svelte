@@ -36,9 +36,9 @@
 	.box {
 		flex-grow: 1;
 		width: calc(100% - 4rem);
-		margin: 1rem;
+		margin: 3rem 1rem;
 		padding: 0 1rem;
-		height: 41.3rem;
+		height: 40.3rem;
 		border: solid 1px var(--heading-color);
 		background: var(--primary-color);
 
