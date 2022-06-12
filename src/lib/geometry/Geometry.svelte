@@ -175,5 +175,6 @@
 		left: 0;
 		overflow: hidden;
 		z-index: -10;
+		opacity: .8;
 	}
 </style>

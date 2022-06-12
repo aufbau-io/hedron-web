@@ -15,40 +15,34 @@
 </script>
 
 <svelte:head>
-	<title>Contact | Hedron Hackerspace</title>
-	<meta name="description" content="About this app" />
+	<title>Resources | Hedron Hackerspace</title>
+	<meta name="description" content="Hedron Hackerspace Workshops" />
 </svelte:head>
 
 <div class="content">
-	<h1>h.h Contact</h1>
+	<h1>h.h Resources</h1>
 
 	<div class="box">
-		<p>
-		 Address:
-		 <br><br>
-		 2020 SE Bush St
-		 Portland, OR 97202
-		</p>
-		<p>
-			Phone:
-			<br><br>
-			(971) 248-0034
-		</p>
-		 <p>
-			Email:
-			<br><br>
-			hedron.hackerspace@gmail.com
-		 </p>
-		 <p>
-			Hours:
-			<br><br>
-			Open Most Days<br> - Please call ahead to<br> see if anyone is around.
-		 </p>
-		 <a href="https://www.paypal.com/biz/fund?id=5DN2LXUAM638Q">
-			Donate
+		<a class="full" href="https://hhacker.space/wiki/">
+		 Hedron Hackerspace Wiki
+		</a>
+		<a href="https://docs.google.com/document/d/1l3CDsCe_zyb_0C0pht6DiqpAUETnxGl8E7gCGvtW7kc/edit?usp=sharing">
+			Membership<br>Info.
+		</a>
+		 <a href="https://discord.gg/ZSknb6pw5c">
+			Join us on Discord
 		 </a>
-		 <a href="https://hhacker.space/subscribe.htm">
-			Monthly Subscription
+		 <a href="https://trello.com/b/it8auoJj/hedron-hackerspace">
+			Volunteering<br>and Wishlist
+		 </a>
+		 <a href="https://docs.google.com/spreadsheets/d/1ek1TD5_b3T5c9AKcOt6cdKx2wKrkv_jVnbovPsvvtsY/edit?usp=sharing">
+			Prices
+		 </a>
+		 <a href="https://www.etsy.com/shop/HedronHackerspace">
+			Support us<br>on Etsy.com
+		 </a>
+		 <a href="https://drive.google.com/open?id=11TBfFzgVBX-4quV9uxHzIntFrgItW8HP">
+			Docs and Info.
 		 </a>
 	</div>
 </div>
@@ -66,25 +60,29 @@
 		flex-wrap: wrap;
 	}
 
-	.box p, .box a {
+	.box a {
 		flex-grow: 1;
+		width: calc(100% / 5);
 		margin: 1rem;
 		padding: 0 1rem;
 		height: 12rem;
 		border: solid 1px var(--heading-color);
 		background: var(--primary-color);
-		font-size: 1rem;
 
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.box a {
-		background: var(--muted-heading-color);
-		border: solid 7px var(--primary-color);
-		color: var(--primary-color);
-		border-style: double;
 		cursor: pointer;
 	}
+
+	.box a.full {
+		flex-grow: 3;
+		width: 100%;
+	}
+
+	.box a:hover {
+		background: var(--muted-heading-color);
+		color: var(--primary-color);
+	}
+
 </style>

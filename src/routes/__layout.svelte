@@ -50,13 +50,13 @@
 	.background {
 		height: 100%;
 		width: 80%;
-		max-width: 1200px;
+		max-width: 75rem;
 		position: absolute;
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
 		overflow: hidden;
-		background: #171717bb;
+		background: #171717ee;
 		border-left: solid 1px 	var(--heading-color);
 		border-right: solid 1px	var(--heading-color);
 		z-index: -1;
@@ -68,7 +68,8 @@
 		justify-content: start;
 		padding: 20px;
 		bottom: 0;
-		left: 0;
+		left: 50%;
+		transform: translate(-50%);
 		position: absolute;
 	}
 
@@ -76,7 +77,7 @@
 		width: 7em;
 		height: 0em;
 		margin: .5rem;
-		opacity: .33;
+		opacity: .3;
 	}
 
 	.corner:hover {
@@ -94,7 +95,7 @@
 
 	.corner img {
 		width: 3em;
-		height: 2.4em;
+		height: 2.5em;
 		object-fit: contain;
 	}
 
@@ -105,7 +106,7 @@
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 40px 0;
+			padding: 50px 0;
 		}
 	}
 </style>

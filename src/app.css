@@ -7,17 +7,17 @@
 	--secondary-color: #0a0a0a;
 	--accent-color: #00eed8;
 	--heading-color: #00bbaa;
+	--muted-heading-color: #00bbaadd;
 	--aufbau-color: #feb74cee;
-	--text-color: #f0f0f0;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
-	--column-margin-top: 1rem;
-	--border: solid 2px white;
+	--column-margin-top: 0rem;
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
+	box-sizing: border-box;
+	color: var(--heading-color);
 	background: var(--primary-color);
 }
 
@@ -31,11 +31,13 @@ h1,
 h2 {
 	font-weight: 400;
 	color: var(--heading-color);
+	cursor: default;
 }
 
 p {
 	line-height: 1.5;
 	color: var(--heading-color);
+	font-size: 1rem;
 }
 
 a {
@@ -48,12 +50,12 @@ a:hover {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem;
 	text-align: center;
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.4rem;
 }
 
 pre {
@@ -76,8 +78,5 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
+@media (max-width: 800px) {
 }

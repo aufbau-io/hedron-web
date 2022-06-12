@@ -11,13 +11,13 @@
 		</svg>
 		<ul>
 			<li class:active={$page.url.pathname === '/'}>
-				<a sveltekit:prefetch href="/">about</a>
+				<a sveltekit:prefetch href="/">hedron</a>
 			</li>
-			<li class:active={$page.url.pathname === '/workshops'}>
-				<a sveltekit:prefetch href="/workshops">Workshops</a>
+			<li class:active={$page.url.pathname === '/resources'}>
+				<a sveltekit:prefetch href="/resources">Resources</a>
 			</li>
-			<li class:active={$page.url.pathname === '/makers'}>
-				<a sveltekit:prefetch href="/makers">Makers</a>
+			<li class:active={$page.url.pathname === '/gallery'}>
+				<a sveltekit:prefetch href="/gallery">Gallery</a>
 			</li>
 			<li class:active={$page.url.pathname === '/contact'}>
 				<a sveltekit:prefetch href="/contact">Contact</a>
@@ -51,7 +51,7 @@
 	}
 
 	path {
-		fill: var(--heading-color);
+		fill: var(--muted-heading-color);
 	}
 
 	ul {
@@ -63,7 +63,7 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--heading-color);
+		background: var(--muted-heading-color);
 		background-size: contain;
 	}
 

@@ -15,16 +15,14 @@
 </script>
 
 <svelte:head>
-	<title>Makers | Hedron Hackerspace</title>
+	<title>Gallery | Hedron Hackerspace</title>
 	<meta name="description" content="Meet your Maker(s)" />
 </svelte:head>
 
 <div class="content">
-	<h1>makers</h1>
+	<h1>h.h Gallery</h1>
 
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta tempor neque. Pellentesque in condimentum enim.
-	</p>
+	<div class="box"></div>
 </div>
 
 <style>
@@ -33,5 +31,16 @@
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
 		text-align: center;
+	}
+	
+	.box {
+		flex-grow: 1;
+		width: calc(100% - 4rem);
+		margin: 1rem;
+		padding: 0 1rem;
+		height: 41.3rem;
+		border: solid 1px var(--heading-color);
+		background: var(--primary-color);
+
 	}
 </style>
