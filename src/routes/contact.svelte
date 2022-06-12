@@ -70,7 +70,7 @@
 		flex-grow: 1;
 		margin: 1rem;
 		padding: 0 1rem;
-		height: 12rem;
+		height: 11.8rem;
 		border: solid 1px var(--heading-color);
 		background: var(--primary-color);
 		font-size: 1rem;

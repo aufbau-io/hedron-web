@@ -106,7 +106,7 @@
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 50px 0;
+			padding: 53px 0;
 		}
 	}
 </style>
