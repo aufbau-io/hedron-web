@@ -40,7 +40,7 @@
   import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
   import TWEEN from "@tweenjs/tween.js"
   // import { TrackballControls  } from 'three/examples/jsm/controls/TrackballControls'
-  import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
+  // import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
   import { mapGetters, mapActions } from "vuex"
 
   export default {
@@ -52,7 +52,7 @@
         renderer: null,
         mesh: null,
         controls: null,
-        loaded: false,
+        loaded: true,
         progress: 0,
         table: [
           "H", "Hydrogen", "1.00794", 1, 1,
@@ -209,22 +209,10 @@
         this.loaded = true
         this.startAnimation()
       },
-      setProgress (progress) {
-        this.progress = progress
-      },
       init () {
         let container = document.getElementById("container")
 
-        this.loadingManager = new THREE.LoadingManager()
-        this.loadingManager.onProgress = ( url, itemsLoaded, itemsTotal ) => {
-          let progress = Math.floor(itemsLoaded / itemsTotal * 100)
-
-          setTimeout(() => { this.setProgress(progress) }, progress*10)
-        }
-        this.loadingManager.onLoad  = () => {
-          // this.loaded = true;
-          setTimeout(() => { this.delayStart() }, 2000)
-        }
+        setTimeout(() => { this.delayStart() }, 2000)
 
         this.camera = new THREE.PerspectiveCamera(60, container.clientWidth/container.clientHeight, 1, 1500)
         this.camera.position.set(0,100,900)
@@ -236,28 +224,8 @@
 
         // ---------------------------------------------------------------------
 
-        // AUDIO
-
-        this.audioContext = new AudioContext()
-
         // ---------------------------------------------------------------------
 
-
-        const loader = new GLTFLoader(this.loadingManager)
-        loader.load( "/orange.glb", gltf => {
-
-          const mesh = gltf.scene
-
-          this.laptop = new THREE.Group()
-          this.laptop.scale.multiplyScalar( 60 )
-          this.laptop.translateY(-10)
-          this.laptop.rotateY(Math.PI / 4)
-          // this.laptop.translateZ(100)
-          // this.scene.add( this.laptop )
-          this.laptop.add( mesh )
-
-        }, undefined, function () {
-        } )
 
         // ---------------------------------------------------------------------
 
@@ -265,14 +233,6 @@
 
 
         this.scene.fog = new THREE.Fog( 0x0b0b0b, 1, 1500 )
-
-        // let floorGeometry = new THREE.BoxGeometry(1000000, .01, 1000000)
-        // let material = new THREE.MeshToonMaterial({color: 0x1b1b1b, metalness:0.8})
-
-        // this.floor = new THREE.Mesh(floorGeometry, material)
-        // this.floor.translateY(-3000)
-
-        // this.scene.add(this.floor)
 
         this.hemiLight = new THREE.HemisphereLight( 0xf0f0f0, 0x222222 )
         this.hemiLight.position.set( 0, 10000, 0 )
@@ -422,10 +382,10 @@
 
           const object = new THREE.Object3D()
 
-          let o = (i==62) ? 63 : i // to account for 62 being where the laptop is
-          object.position.x = ( ( o % 5 ) * 400 ) - 800
-          object.position.z = ( - ( Math.floor( o / 5 ) % 5 ) * 400 ) + 800
-          object.position.y = ( Math.floor( o / 25 ) ) * 400 - 800
+          // let o = (i==62) ? 63 : i // to account for 62 being where the laptop is
+          object.position.x = ( ( i % 5 ) * 400 ) - 800
+          object.position.z = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800
+          object.position.y = ( Math.floor( i / 25 ) ) * 400 - 800
 
           this.targets.grid.push( object )
 
@@ -583,7 +543,6 @@
         
         if (this.controls.enabled && !this.isTransition) {
           this.scene.rotation.y += 0.0005
-          this.laptop.rotation.y -= 0.0005
         }
 
 
@@ -740,5 +699,21 @@ button:active, button.active {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 800px) {
+  
+  #menu {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  width: calc(100% / 3 - 4rem + 2px);
+  height: 4rem;
+}
+
+
+}
 
 </style>

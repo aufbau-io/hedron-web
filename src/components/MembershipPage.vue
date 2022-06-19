@@ -60,7 +60,6 @@
 
 h1 {
   font-size: 4rem;
-  color: #FFC0CB;
 }
 
 main {
@@ -78,8 +77,13 @@ main {
 }
 
 .box.primary {
+  background: #eFb0bB;
+  border-color: #f0f0f0;
+}
+
+.box.primary:hover {
   background: #FFC0CB;
-  border-color: #FF808B;
+  border-color: #f0f0f0;
 }
 
 .box.half {
@@ -95,13 +99,19 @@ main {
 }
 
 @media only screen and (max-width: 800px) {
-  .box.half {
-    width: 100%;
+  .box {
+    margin-bottom: 0;
+    padding: 1rem;
   }
 
-  .box.half.left {
-  margin-right: 0;
+  .box.half {
+    width: calc(50% - 1rem);
   }
+
+.box.half.left {
+  margin-right: 2rem;
+}
+
 
 }
 </style>

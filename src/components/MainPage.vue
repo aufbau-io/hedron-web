@@ -82,7 +82,11 @@
 @media only screen and (max-width: 800px) {
 
   .body {
-    padding: 2rem 2rem;
+    padding: 2rem;
+    height: calc(100% - 8rem - 4px);
+    width: calc(100% - 2rem);
+    top: 1rem;
+    transform: translate(-50%,0);
   }
 
   .menu__row {
