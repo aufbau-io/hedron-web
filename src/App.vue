@@ -174,7 +174,7 @@ a, .box {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2b2c2d;
+  background: #0b0b0b;
 }
 
 /* Handle */
