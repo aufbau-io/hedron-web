@@ -3,6 +3,7 @@
     <three-cubes class="three" />
     <landing-page
       v-if="page=='hedron'"
+      id="fade" 
       class="body" />
     <membership-page
       v-if="page=='membership'"
@@ -67,11 +68,21 @@
   border: solid 1px #00ffff99;
   border-radius: 6px;
 
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 7s;
+  animation-fill-mode: forwards;
 
   overflow-y: auto;
   overflow-x: hidden;
   
 }
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 @media only screen and (max-width: 1000px) {
 }

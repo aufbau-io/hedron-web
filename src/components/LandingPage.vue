@@ -45,13 +45,15 @@ h1 {
   font-size: 4rem;
 }
 
-
 main {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
 }
+
+
+
 
 @media only screen and (max-width: 1000px) {
 }

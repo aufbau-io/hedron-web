@@ -12,8 +12,6 @@
 </template>
 
 <script>
-  import { mapActions,mapGetters } from "vuex"
-
   export default {
     name: "App",
     components: {
@@ -21,34 +19,15 @@
     data () {
       return { componentKey: 0 }
     },
-    computed: {
-      ...mapGetters(["isMobile"])
-    },
     created () {
       setTimeout(this.scrollToTop, 1000)
       if ( !this.isMobile ) {
         this.preLoadImages()
       }
     },
-    beforeMount () {
-      if (window.innerWidth <= 700) {
-        this.setIsMobile(true)
-      } else {
-        this.setIsMobile(false)
-      }
-    },
     methods: {
-      ...mapActions(["setIsMobile"]),
       scrollToTop () {
         window.scrollTo(0,0)
-      },
-      preLoadImages () {
-        // let clients = new Image()
-        // clients.src = require('@/assets/clients_w.svg')
-        // let software = new Image()
-        // software.src = require('@/assets/software_w.svg') 
-        // let palm = new Image()
-        // palm.src = require('@/assets/palm.jpg')    
       },
       handleNavigation () {
         this.componentKey += 1
@@ -91,11 +70,6 @@
   cursor: pointer;
 }
 
-#fade.show {
-  opacity: .9;
-  height: 100%;
-  transition: opacity .4s ease-out, height 0s linear;
-}
 
 </style>
 

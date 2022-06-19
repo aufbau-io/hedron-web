@@ -625,7 +625,7 @@
 <style scoped>
 .loading {
 	position: absolute;
-  opacity: 0;
+  opacity: 0.8;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -637,6 +637,7 @@
   justify-content: center;
 	flex-wrap: wrap;
   box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+  font-size: 1.4rem;
 }
 
 .progress-text {
