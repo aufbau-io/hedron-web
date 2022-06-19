@@ -685,7 +685,7 @@ a {
 
 #menu {
   position: absolute;
-  bottom: 3%;
+  bottom: 3.25%;
   width: 100%;
   text-align: center;
 }
