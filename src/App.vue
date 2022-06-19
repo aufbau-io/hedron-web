@@ -122,7 +122,6 @@ body {
   color: #00ffffdd;
   font-size: 1.8rem;
   opacity: 1;
-  user-select: none;
   overflow-x: hidden;
   overflow-y: scroll;
 }
