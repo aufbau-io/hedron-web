@@ -69,7 +69,7 @@
   border-radius: 6px;
 
   opacity: 0;
-  animation: fadeIn 1.5s ease 7s;
+  animation: fadeIn 1s ease 7s;
   animation-fill-mode: forwards;
 
   overflow-y: auto;
