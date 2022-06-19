@@ -142,7 +142,7 @@ a, .box {
   border-radius: 6px;
   height: 100px;
   min-height: 80px;
-  margin: 2rem;
+  margin: 2rem 0;
 
   text-decoration: none;
 

@@ -10,7 +10,7 @@
     <div class="table">
       <a
         href="https://docs.google.com/document/d/1l3CDsCe_zyb_0C0pht6DiqpAUETnxGl8E7gCGvtW7kc/edit?usp=sharing"
-        class="box half">
+        class="box half left">
         Membership Info
       </a>
       <a
@@ -20,7 +20,7 @@
       </a>
       <a
         href="https://docs.google.com/spreadsheets/d/1ek1TD5_b3T5c9AKcOt6cdKx2wKrkv_jVnbovPsvvtsY/edit?usp=sharing"
-        class="box half">
+        class="box half left">
         Prices
       </a>
       <a
@@ -30,7 +30,7 @@
       </a>
       <a
         href="https://drive.google.com/open?id=11TBfFzgVBX-4quV9uxHzIntFrgItW8HP"
-        class="box half">
+        class="box half left">
         Docs and Info
       </a>
       <a
@@ -83,9 +83,12 @@ main {
 }
 
 .box.half {
-  width: calc(50% - 4rem);
-  margin: 2rem;
+  width: calc(50% - 2rem);
   flex-basis: auto;
+}
+
+.box.half.left {
+  margin-right: 4rem;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -94,6 +97,11 @@ main {
 @media only screen and (max-width: 800px) {
   .box.half {
     width: 100%;
-}
+  }
+
+  .box.half.left {
+  margin-right: 0;
+  }
+
 }
 </style>
