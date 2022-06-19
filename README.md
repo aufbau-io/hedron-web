@@ -1,15 +1,16 @@
 # Hedron Hackerspace Website
  
-#### Demo Server
+### Demo Server
 
 ```
 $ yarn
 $ yarn serve
 ```
 
-#### Build Server
+### Build Server
 
 ```
 $ yarn
 $ yarn build
 ```
+
