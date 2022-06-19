@@ -1,16 +1,17 @@
 <template>
   <div class="main">
     <three-cubes class="three" />
-    <landing-page
-      v-if="page=='hedron'"
-      id="fade" 
-      class="body" />
-    <membership-page
-      v-if="page=='membership'"
-      class="body" />
-    <gallery-page
-      v-if="page=='gallery'"
-      class="body" />
+    <span id="fade">
+      <landing-page
+        v-if="page=='hedron'"
+        class="body" />
+      <membership-page
+        v-if="page=='membership'"
+        class="body" />
+      <gallery-page
+        v-if="page=='gallery'"
+        class="body" />
+    </span>
   </div>
 </template>
 
@@ -68,13 +69,15 @@
   border: solid 1px #00ffff99;
   border-radius: 6px;
 
-  opacity: 0;
-  animation: fadeIn 1s ease 7s;
-  animation-fill-mode: forwards;
-
   overflow-y: auto;
   overflow-x: hidden;
   
+}
+
+#fade {
+  opacity: 0;
+  animation: fadeIn 1s ease 7s;
+  animation-fill-mode: forwards;
 }
 
 
