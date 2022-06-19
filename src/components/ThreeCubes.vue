@@ -736,9 +736,9 @@ a {
 
 button {
   z-index: 100;
-  color: rgba(127,255,255,0.8);
+  color: #00ffffdd;
   background: transparent;
-  outline: 1px solid rgba(127,255,255,0.8);
+  outline: 1px solid #00ffffdd;
   border: 0px;
   padding: 5px 10px;
   margin: 0 5px;
@@ -749,17 +749,17 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0,255,255,0.06);
+  background-color: #00ffff33;
   transition: all .05s ease-out, opacity 0s linear;
   opacity: 1;
 }
 
 button:active, button.active {
   color: #000000;
-  background-color: rgba(0,255,255,0.8);
+  background-color: #00ffffdd;
   transition: all .0s ease-out, opacity 0s linear;
-   outline: 1px solid rgba(127,255,255,1);
-   font-weight: 600;
+  outline: 1px solid #00ffff;
+  font-weight: 600;
 }
 
 
