@@ -70,11 +70,12 @@ main {
 
 .scroll {
   width:100%;
+  height:100%;
   overflow-y: auto;
 }
 
 .scroll img {
-    width:inherit;
+  width:inherit;
 }
 
 @media only screen and (max-width: 1000px) {
