@@ -30,14 +30,7 @@
 
     <div
       v-if="!loaded"
-      class="loading">
-      <div
-        class="progress-bar"
-        :style="{'width':progress+'px', 'margin-right':110-progress+'px'}" />
-      <h3 class="progress-text">
-        {{ progress }}
-      </h3>
-    </div>
+      class="loading" />
   </div>
 </template>
 
@@ -251,15 +244,16 @@
 
 
         const loader = new GLTFLoader(this.loadingManager)
-        loader.load( "/laptop.glb", gltf => {
+        loader.load( "/orange.glb", gltf => {
 
           const mesh = gltf.scene
 
           this.laptop = new THREE.Group()
-          this.laptop.scale.multiplyScalar( 500 )
-          this.laptop.translateY(-120)
+          this.laptop.scale.multiplyScalar( 60 )
+          this.laptop.translateY(-10)
+          this.laptop.rotateY(Math.PI / 4)
           // this.laptop.translateZ(100)
-          this.scene.add( this.laptop )
+          // this.scene.add( this.laptop )
           this.laptop.add( mesh )
 
         }, undefined, function () {
@@ -305,7 +299,7 @@
         // ---------------------------------------------------------------------
 
         this.controls = new OrbitControls( this.camera, this.renderer.domElement )
-        this.controls.minDistance = 300
+        this.controls.minDistance = 450
         this.controls.maxDistance = 1300
         this.controls.enableDamping = true
         this.controls.enablePan = false
@@ -631,6 +625,7 @@
 	width: 100%;
 	height: 100%;
 	background: #0b0b0b;
+  opacity: 0;
   color: #88ffff99;
 	display: flex;
 	align-items: center;
@@ -638,24 +633,6 @@
 	flex-wrap: wrap;
   box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
   font-size: 1.4rem;
-}
-
-.progress-text {
-  color: #88ffff;
-  text-shadow: 0 0 10px rgba(0,255,255,0.55);
-  font-weight: 400;
-  padding-left: .3rem;
-  opacity: .8;
-}
-
-.progress-bar {
-	height: 2px;
-	width: 100px;
-	background: #88ffff;
-  opacity: .8;
-  transition: all .1s linear;
-  color: #88ffff99;
-  box-shadow: 0px 0px 12px rgba(48, 66, 66, 0.8);
 }
 
 

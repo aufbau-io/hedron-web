@@ -63,7 +63,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-53%);
-
   padding: 6rem 8rem;
   background: #0b0c0dee;
   border: solid 1px #00ffff99;
@@ -74,17 +73,7 @@
   
 }
 
-#fade {
-  opacity: 0;
-  animation: fadeIn 1.2s ease 7.8s;
-  animation-fill-mode: forwards;
-}
 
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
 
 @media only screen and (max-width: 1000px) {
