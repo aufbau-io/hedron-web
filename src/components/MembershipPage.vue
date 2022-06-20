@@ -1,7 +1,6 @@
 <template>
   <main>
     <h1>h.h Membership</h1>
-    <br>
     <a
       href="https://hhacker.space/subscribe.htm"
       class="box primary">
@@ -39,6 +38,7 @@
         Donate
       </a>
     </div>
+    <br>
     <h2>-</h2>
     <br>
     <contact-footer />
