@@ -78,12 +78,12 @@ main {
 
 .box.primary {
   background: #eFb0bB;
-  border-color: #f0f0f0;
+  border-color: #FFC0CB;
 }
 
 .box.primary:hover {
   background: #FFC0CB;
-  border-color: #f0f0f0;
+  border-color: #eFb0bB;
 }
 
 .box.half {

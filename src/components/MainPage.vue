@@ -87,6 +87,7 @@
     width: calc(100% - 2rem);
     top: 1rem;
     transform: translate(-50%,0);
+    border-radius: 2px;
   }
 
   .menu__row {
