@@ -7,6 +7,7 @@
     <div id="menu">
       <button
         id="sphere"
+        class="left"
         :class="{ active: page=='hedron' }"
         @click="setPage('hedron')">
         HEDRON
@@ -22,6 +23,7 @@
       </button>
       <button
         id="grid"
+        class="right"
         :class="{ active: page=='gallery' }"
         @click="setPage('gallery')">
         GALLERY
@@ -683,6 +685,14 @@ button {
   opacity: .8;
   transition: all .1s ease-in, opacity 0s linear;
   border-radius: 2px;
+}
+
+button.left {
+  margin-left: 0;
+}
+
+button.right {
+  margin-right: 0;
 }
 
 button:hover {
