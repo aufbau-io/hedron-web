@@ -4,7 +4,7 @@
     <a
       href="https://hhacker.space/subscribe.htm"
       class="box primary">
-      Join us with a Monthly Subscription
+      ~ Buy a Monthly Subscription ~
     </a>
     <div class="table">
       <a
@@ -77,13 +77,7 @@ main {
 }
 
 .box.primary {
-  background: #eFb0bB;
-  border-color: #FFC0CB;
-}
-
-.box.primary:hover {
-  background: #FFC0CB;
-  border-color: #eFb0bB;
+  border: double 4px #00ffff;
 }
 
 .box.half {
@@ -102,6 +96,7 @@ main {
   .box {
     margin-bottom: 0;
     padding: 1rem;
+    font-weight: 400;
   }
 
   .box.half {
