@@ -4,7 +4,9 @@
       id="container"
       :class="{loaded:loaded}" />
 
-    <div id="menu">
+    <div
+      id="menu"
+      :class="{show:handleShowMain()}">
       <button
         id="sphere"
         class="left"
@@ -190,7 +192,7 @@
       }
     },
     computed: {
-      ...mapGetters(["page"])
+      ...mapGetters(["page","showMain"])
     },
     mounted () {
       this.init()
@@ -211,6 +213,9 @@
         this.loaded = true
         this.startAnimation()
         this.setShowMain(true)
+      },
+      handleShowMain () {
+        return this.showMain ? true : false
       },
       init () {
         let container = document.getElementById("container")
@@ -611,13 +616,6 @@
 }
 
 
-
-
-
-
-
-
-
 /* start periodic table styles */
 
 a {
@@ -629,6 +627,12 @@ a {
   bottom: 3.25%;
   width: 100%;
   text-align: center;
+  opacity: 0;
+}
+
+#menu.show {
+  transition: opacity ease 2.5s 4.5s;
+  opacity: 1;
 }
 
 .element {

@@ -87,7 +87,7 @@
 }
 
 .body.show {
-  transition: opacity ease-out 2s 4s;
+  transition: opacity ease 2.5s 4.5s;
   opacity: 1;
 }
 
