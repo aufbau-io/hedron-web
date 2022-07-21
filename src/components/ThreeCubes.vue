@@ -206,10 +206,11 @@
       window.removeEventListener("resize", this.onWindowResize)
     },
     methods: {
-      ...mapActions(["setPage"]),
+      ...mapActions(["setPage","setShowMain","setShowContent"]),
       delayStart () {
         this.loaded = true
         this.startAnimation()
+        this.setShowMain(true)
       },
       init () {
         let container = document.getElementById("container")
@@ -433,6 +434,7 @@
           // this.camera.position.set(0,0,800)
           this.camera.updateProjectionMatrix()
           this.controls.enabled = true
+          this.setShowContent(true)
           // this.toneLight.intensity = 8
         }, 6000)
 

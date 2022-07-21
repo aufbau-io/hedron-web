@@ -1,16 +1,22 @@
 <template>
-  <div class="main">
-    <three-cubes class="three" />
+  <div
+    class="main">
+    <three-cubes
+      class="
+    three" />
     <span id="fade">
       <landing-page
         v-if="page=='hedron'"
-        class="body" />
+        class="body" 
+        :class="{show:handleShowMain()}" />
       <membership-page
         v-if="page=='membership'"
-        class="body" />
+        class="body"
+        :class="{show:handleShowMain()}" />
       <gallery-page
         v-if="page=='gallery'"
-        class="body" />
+        class="body"
+        :class="{show:handleShowMain()}" />
     </span>
   </div>
 </template>
@@ -31,19 +37,24 @@
       GalleryPage
     },
     computed: {
-      ...mapGetters(["page"])
+      ...mapGetters(["page","showMain"])
     },
     methods: {
-      ...mapActions([])
+      ...mapActions([]),
+      handleShowMain () {
+        return this.showMain ? true : false
+      }
     }
   }
 </script>
 
 <style scoped>
 .main {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   overflow: hidden;
+
+  transition: height ease-in .8s 1s, width ease-in .8s;
 }
 
 .three {
@@ -70,7 +81,14 @@
 
   overflow-y: auto;
   overflow-x: hidden;
+
+  opacity: 0;
   
+}
+
+.body.show {
+  transition: opacity ease-out 2s 4s;
+  opacity: 1;
 }
 
 
