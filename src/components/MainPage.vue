@@ -75,7 +75,7 @@
   left: 50%;
   transform: translate(-50%,-53%);
   padding: 6rem 8rem;
-  background: #0b0c0dee;
+  background: #0b0c0d80;
   border: solid 1px #00ffff99;
   border-radius: 6px;
 
