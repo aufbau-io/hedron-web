@@ -17,11 +17,11 @@
       class="box">
       Join us on Discord
     </a>
-    <a
+    <!--a
       href="https://hhacker.space/wiki/"
       class="box">
       Visit our Wiki
-    </a>
+    </a-->
     <h2>-</h2>
     <br>
     <contact-footer />
