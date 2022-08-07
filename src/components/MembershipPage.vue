@@ -2,7 +2,7 @@
   <main>
     <h1>h.h Membership</h1>
     <a
-      href="https://membership.hhacker.space"
+      href="https://hhacker.space/subscribe.htm"
       class="box primary">
       ~ Buy a Monthly Subscription ~
     </a>
