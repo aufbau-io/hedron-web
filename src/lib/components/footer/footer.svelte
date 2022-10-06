@@ -8,7 +8,7 @@
 			<p>phone: (971) 248-0034</p>
 			<p>email: hedron.hackerspace@gmail.com</p>
 			<p>hours: Open Most Days, Please call ahead</p>
-			<a class="sml" href="https://aufbau.io">ein aufbau ding</a>
+			<a class="sml" href="https://aufbau.io" target="_blank">ein aufbau ding</a>
 		</div>
 	</section>
 </footer>
@@ -26,7 +26,7 @@
 
 	p,
 	a {
-		margin: 5px 10px;
+		margin: 5px 0px;
 	}
 
 	.base {

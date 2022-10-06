@@ -3,9 +3,7 @@
 
 <main>
 	<span class="justify-letters">
-		<p class="lrg">
-			we are a community hackerspace in south east Portland, currently looking for new members.
-		</p>
+		<p class="lrg">membership</p>
 	</span>
 </main>
 
