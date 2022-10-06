@@ -56,4 +56,10 @@
 		width: 66.7%;
 		margin: 0 auto;
 	}
+
+	@media only screen and (max-width: 768px) {
+		.justify-letters {
+			width: 100%;
+		}
+	}
 </style>

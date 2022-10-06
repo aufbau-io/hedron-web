@@ -17,15 +17,16 @@
 	footer {
 		position: absolute;
 		bottom: 0;
+		padding: 10px 20px;
 		width: 100vw;
-		padding: 0 20px;
 		border-top: solid 1px var(--accent);
 		background: var(--black);
 		color: var(--accent);
 	}
 
-	p {
-		margin: 10p;
+	p,
+	a {
+		margin: 5px 10px;
 	}
 
 	.base {
@@ -34,7 +35,6 @@
 		justify-content: space-between;
 		align-items: center;
 		height: auto;
-		padding: 10px 0;
 	}
 
 	.semi {

@@ -20,6 +20,14 @@
 </nav>
 
 <style>
+	nav {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		height: auto;
+	}
+
 	nav a {
 		line-height: 110%;
 		font-weight: 400;
@@ -36,5 +44,15 @@
 	.active,
 	.active:hover {
 		opacity: 1;
+	}
+
+	@media only screen and (max-width: 768px) {
+		nav {
+			width: 100vw;
+		}
+
+		nav a {
+			margin: 0;
+		}
 	}
 </style>

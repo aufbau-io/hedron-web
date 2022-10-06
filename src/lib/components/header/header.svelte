@@ -18,7 +18,7 @@
 </script>
 
 <header>
-	<a href="/"><p>HEDRON hACKERSPACE</p> </a>
+	<a href="/"><h6>HEDRON hACKERSPACE</h6> </a>
 	<Nav {navItems} />
 </header>
 
@@ -33,10 +33,20 @@
 		justify-content: space-between;
 		align-items: center;
 		background: var(--black);
-		padding: 20px 20px;
-		height: 34px;
+		padding: 10px 20px;
+
+		display: flex;
+		gap: 10px;
+		flex-flow: row wrap;
+
 		border-bottom: solid 1px var(--accent);
 		color: var(--accent);
 		user-select: none;
+	}
+
+	@media only screen and (max-width: 768px) {
+		a {
+			width: 100vh;
+		}
 	}
 </style>
