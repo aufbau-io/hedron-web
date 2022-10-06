@@ -25,4 +25,7 @@
 <Footer />
 
 <style>
+	main {
+		max-width: 100vw;
+	}
 </style>

@@ -79,7 +79,7 @@
 
 		.scroll {
 			padding-top: 70px;
-			padding-bottom: 220px;
+			padding-bottom: 50px;
 		}
 	}
 </style>

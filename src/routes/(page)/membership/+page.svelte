@@ -33,7 +33,7 @@
 		position: absolute;
 		top: 50%;
 		left: 0;
-		transform: translateY(-50%);
+		transform: translateY(calc(-50% + 25px));
 
 		background: var(--black);
 		border-top: solid 1px var(--accent);
@@ -90,7 +90,13 @@
 
 	@media only screen and (max-width: 768px) {
 		.justify-letters {
-			width: 80vw;
+			width: 100%;
+			min-width: 0;
+		}
+
+		a {
+			padding: 40px 10px;
+			border: solid 1px var(--accent);
 		}
 	}
 </style>
