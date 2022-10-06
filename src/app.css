@@ -14,6 +14,11 @@
 }
 
 @font-face {
+	font-family: untitled-sans;
+	src: url(/fonts/untitled/test-untitled-sans-bold.woff2) format('woff2');
+}
+
+@font-face {
 	font-family: nb-architekt;
 	src: url(/fonts/NB-Architekt-Pro-Regular.woff) format('woff');
 	font-weight: normal;
@@ -73,7 +78,7 @@
 body {
 	font-family: nb-architekt, sans-serif;
 	background: var(--black);
-	color: var(--white);
+	color: var(--accent);
 }
 
 /* HEADING */

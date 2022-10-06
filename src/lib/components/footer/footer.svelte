@@ -4,7 +4,10 @@
 <footer>
 	<section>
 		<div class="base">
-			<p class="">silicon fm</p>
+			<p>address: 2020 SE Bush St Portland, OR 97202</p>
+			<p>phone: (971) 248-0034</p>
+			<p>email: hedron.hackerspace@gmail.com</p>
+			<p>hours: Open Most Days, Please call ahead</p>
 			<a class="sml" href="https://aufbau.io">ein aufbau ding</a>
 		</div>
 	</section>
@@ -16,16 +19,22 @@
 		bottom: 0;
 		width: 100vw;
 		padding: 0 20px;
-		background: #121212bb;
-		border-bottom: solid 1px var(--white-50);
-		color: var(--white);
+		border-top: solid 1px var(--accent);
+		background: var(--black);
+		color: var(--accent);
+	}
+
+	p {
+		margin: 10p;
 	}
 
 	.base {
 		display: flex;
+		flex-flow: row wrap;
 		justify-content: space-between;
 		align-items: center;
-		height: 42px;
+		height: auto;
+		padding: 10px 0;
 	}
 
 	.semi {

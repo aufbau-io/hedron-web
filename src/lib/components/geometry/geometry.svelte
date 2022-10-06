@@ -1,11 +1,13 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 	import TWEEN from '@tweenjs/tween.js';
 
-	let container, pc;
+	let container, id;
+	onDestroy(() => cancelAnimationFrame(id));
+
 	// Setting up the scene
 	let scene = new THREE.Scene();
 
@@ -78,7 +80,7 @@
 	// ---------------------------------------------------------------------
 
 	let line = new THREE.BoxGeometry(0.1, 0.1, 1000);
-	let blackMaterial = new THREE.MeshToonMaterial({ color: 0x141414 });
+	let blackMaterial = new THREE.MeshToonMaterial({ color: 0xbe4040 });
 
 	let lineLeft = new THREE.Mesh(line, blackMaterial);
 	let lineRight = new THREE.Mesh(line, blackMaterial);
@@ -128,7 +130,7 @@
 		renderer.render(scene, camera);
 		scene.rotation.y += 0.0005;
 		TWEEN.update();
-		requestAnimationFrame(render);
+		id = requestAnimationFrame(render);
 	};
 
 	window.addEventListener(

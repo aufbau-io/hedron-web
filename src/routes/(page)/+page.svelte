@@ -10,8 +10,12 @@
 
 <main>
 	<svelte:component this={Geometry} />
-	<span class="page justify-letters">
-		we are a community hackerspace in SE Portland, currently looking for new members.
+	<span class="page">
+		<span class="justify-letters">
+			<p class="lrg">
+				we are a community hackerspace in south east Portland, currently looking for new members.
+			</p>
+		</span>
 	</span>
 </main>
 
@@ -28,11 +32,13 @@
 		top: 50%;
 		transform: translateY(-50%);
 		left: 0;
-		background: #0b0b0b88;
+		background: var(--black);
+		border-top: solid 1px var(--accent);
+		border-bottom: solid 1px var(--accent);
 
 		width: 100vw;
-		padding: 40px 40px;
-		font-size: 4.6vw;
+		padding: 10px 40px;
+
 		color: var(--accent);
 		text-transform: uppercase;
 		user-select: none;
@@ -40,13 +46,14 @@
 		display: flex;
 		align-items: center;
 
-		font-family: 'nb-television-3d', sans-serif;
-		text-shadow: -3px 2px var(--black);
+		font-family: 'nb-architekt', sans-serif;
 	}
 
 	.justify-letters {
 		display: inline-block;
 		text-align: justify;
 		text-align-last: justify;
+		width: 66.7%;
+		margin: 0 auto;
 	}
 </style>

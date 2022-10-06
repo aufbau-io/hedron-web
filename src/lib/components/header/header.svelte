@@ -5,6 +5,14 @@
 		{
 			name: 'HOME',
 			href: '/'
+		},
+		{
+			name: 'MEMBERSHIP',
+			href: '/membership'
+		},
+		{
+			name: 'GALLERY',
+			href: '/gallery'
 		}
 	];
 </script>
@@ -24,7 +32,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 20px;
+		background: var(--black);
+		padding: 20px 20px;
 		height: 34px;
 		border-bottom: solid 1px var(--accent);
 		color: var(--accent);
