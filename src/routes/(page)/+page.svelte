@@ -4,7 +4,8 @@
 <main>
 	<span class="justify-letters">
 		<p class="lrg">
-			we are a community hackerspace in south east Portland, currently looking for new members.
+			we are a community driven hackerspace in south east Portland, currently looking for new
+			members.
 		</p>
 	</span>
 </main>
