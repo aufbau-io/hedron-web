@@ -80,7 +80,7 @@
 	// ---------------------------------------------------------------------
 
 	let line = new THREE.BoxGeometry(0.1, 0.1, 1000);
-	let blackMaterial = new THREE.MeshToonMaterial({ color: 0xbe4040 });
+	let blackMaterial = new THREE.MeshToonMaterial({ color: 0x141414 });
 
 	let lineLeft = new THREE.Mesh(line, blackMaterial);
 	let lineRight = new THREE.Mesh(line, blackMaterial);
