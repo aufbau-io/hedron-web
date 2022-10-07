@@ -80,6 +80,8 @@
 		.scroll {
 			padding-top: 70px;
 			padding-bottom: 50px;
+			border-left: none;
+			border-right: none;
 		}
 	}
 </style>
