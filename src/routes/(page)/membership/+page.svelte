@@ -33,7 +33,7 @@
 		position: absolute;
 		top: 50%;
 		left: 0;
-		transform: translateY(calc(-50% + 25px));
+		transform: translateY(calc(-50% + 15px));
 
 		background: var(--black);
 		border-top: solid 1px var(--accent);
@@ -95,7 +95,7 @@
 		}
 
 		a {
-			padding: 40px 10px;
+			padding: 30px 10px;
 			border: solid 1px var(--accent);
 		}
 	}
