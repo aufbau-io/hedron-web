@@ -24,7 +24,7 @@
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0x0b0b0b, 1);
+	renderer.setClearColor(0x0b0b0b, 0);
 
 	const controls = new OrbitControls(camera, renderer.domElement);
 	controls.maxDistance = 50;
