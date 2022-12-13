@@ -5,7 +5,7 @@
 		showFooter = !showFooter;
 	};
 
-	$: contactText = showFooter ? 'HIDE CONACT' : 'CONTACT';
+	$: contactText = showFooter ? 'HIDE CONTACT' : 'CONTACT';
 </script>
 
 <footer>
