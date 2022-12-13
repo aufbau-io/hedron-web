@@ -57,6 +57,7 @@
 		footer {
 			background: var(--accent);
 			color: var(--black);
+			cursor: pointer;
 		}
 		section {
 			height: calc(50vh + 2px);
